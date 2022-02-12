@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Franklin Got';
+	src: url('../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 body{
     font-family: Arial, sans-serif;
@@ -12,10 +19,10 @@ nav{
 
 .logo{
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 60px;
-    padding-left: 388px;
     float:left;
+    font-family: 'Franklin Got';
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
@@ -32,7 +39,6 @@ nav{
 
 .menu{
     float: left;
-    padding-left: 432px;
 }
 
 .menu li{
@@ -40,20 +46,24 @@ nav{
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
-    -webkit-animation: topshift 0,4s ease forwards;
-    -o-animation: topshift 0,4s ease forwards;
-    animation: topshift 0,4s ease forwards;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
     opacity: 0;
 
 }
 
 .menu li a{
-    transition: all 0,1s;
+    transition: all 0.1s;
     color: white;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
+}
+.white-btn:visited{
+    color: white;
 }
 
 .menu li a:visited{
@@ -67,16 +77,16 @@ nav{
 }
 
 .menu li:nth-child(2){
-    animation-delay: 0,4s;  
+    animation-delay: 0.4s;  
 }
 .menu li:nth-child(3){
-    animation-delay: 0,8s;  
+    animation-delay: 0.8s;  
 }
 .menu li:nth-child(4){
-    animation-delay: 1,2s;  
+    animation-delay: 1.2s;  
 }
 .menu li:nth-child(5){
-    animation-delay: 1,6s;  
+    animation-delay: 1.6s;  
 }
 .menu li:nth-child(6){
     animation-delay: 2s;  
@@ -100,13 +110,13 @@ nav{
 }
 
 .title__container{
-    float: left; 
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
-    -webkit-animation: titlemove 2s ease;
-    -o-animation: titlemove 2s ease;
-    animation: titlemove 2s ease;
+    width: 100%;
+/*    -webkit-animation: titlemove 3.5s ease;
+    -o-animation: titlemove 3.5s ease;
+    animation: titlemove 3.5s ease;
+    */
 }
 
 @keyframes titlemove{
@@ -161,6 +171,18 @@ nav{
     width: 100%;
     height: 100%;
     background: url(../img/strip.png) no-repeat 50% 18% , url(../img/Photo.png) 50% 45%/auto no-repeat , url(../img/backgroundlayer.jpg) center/cover no-repeat;
+}
+
+.AboutMe input{
+    transform: all 0.2s;
+    transform: scale(1);
+}
+.AboutMe input:hover{
+    background: #344051;
+    color: white;
+}
+.AboutMe input:active{
+    transform: scale(1.1);
 }
 
 .AboutMe h3{
@@ -338,6 +360,18 @@ nav{
     padding-right: 27px;
 }
 
+.Cases input{
+    transform: all 0.2s;
+    transform: scale(1);
+}
+.Cases input:hover{
+    background: #e88604;
+    color: white;
+}
+.Cases input:active{
+    transform: scale(1.1);
+}
+
 .projekt_name h4{
     margin: -180px 1060px 0px 675px;
     color: #384354;
@@ -355,6 +389,7 @@ nav{
 .pay{
     width: 100%;
     height: 850px;
+    background: url(../img/long_strip.png) 50% 62% no-repeat , url(../img/bg_pay.jpg) 1920px 830px;
 }
 .pay h3{
     padding-top: 103px;
@@ -366,7 +401,7 @@ nav{
 
 .pay h5{
     padding-top: 58px;
-    padding-left: 496px;
+    padding-left: 505px;
     font-size: 17px;
     font-weight: bold;
     color: #1c2534;
@@ -374,57 +409,84 @@ nav{
 
 .option1{
     margin-top: 10px;
-    margin-left: 496px;
+    margin-left: 505px;
     padding: 8px 10px;
-    padding-right: 780px;
+    padding-right: 727px;
     color: #737373;
     background-color: #eeeeee;
     border: 0px solid #dddddd;
     text-align: left;
+}
+
+.option1:focus{
+    border: 1px solid #e88604;
 }
 
 .option2{
     margin-top: 10px;
-    margin-left: 496px;
+    margin-left: 505px;
     padding: 8px 10px;
-    padding-right: 805px;
+    padding-right: 748px;
     color: #737373;
     background-color: #eeeeee;
     border: 0px solid #dddddd;
     text-align: left;
+}
+.option2:focus{
+    border: 1px solid #e88604;
 }
 
 .option3{
     margin-top: 10px;
-    margin-left: 496px;
+    margin-left: 505px;
     padding: 8px 10px;
-    padding-right: 775px;
+    padding-right: 720px;
     color: #737373;
     background-color: #eeeeee;
     border: 0px solid #dddddd;
     text-align: left;
 }
+.option3:focus{
+    border: 1px solid #e88604;
+}
 
 .text11{
     margin-top: 60px;
-    margin-left: 496px;
+    margin-left: 505px;
     color: #1c2534;
     font-size: 20px;
     font-weight: bold;  
 }
 
+.text11_0{
+    margin-top: -58px;
+    margin-left: 1380px;
+    color: #1c2534;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
 .text12{
     margin-top: 20px;
-    margin-left: 496px;
-    color: ##1c2534;
+    margin-left: 505px;
+    color: #1c2534;
     font-size: 20px;
     font-weight: bold;
+}
+
+.text12_0{
+    margin-top: 15px;
+    margin-left: 1380px;
+    color: #1c2534;
+    font-size: 20px;
+    font-weight: bold;   
 }
 
 .statistics{
     width: 100%;
     height: 502px;
-    background: url(../img/bakal.png) 1370px 247px no-repeat , url(../img/ok.png) 1075px 247px no-repeat , url(../img/sign2.png) 782px 247px no-repeat , url(../img/smile.png) 500px 247px no-repeat , url(../img/strip.png) 924px 156px no-repeat , url(../img/backgroundPC.jpg) no-repeat;
+    background: url(../img/backgroundPC.jpg) no-repeat;
+    background-attachment: fixed;
 }
 
 .statistics h3{
@@ -435,8 +497,18 @@ nav{
     font-weight: bold;
 }
 
+.img_strip{
+    margin-left: 925px;
+    margin-top: 20px;
+
+}
+
+.img_1{
+    margin: 110px 0px 10px 500px;
+}
+
 .text13{
-    margin-top: 201px;
+    margin-top: 59px;
     margin-left: 498px;
     color: #323e4f;
     font-size: 28px;
@@ -450,8 +522,12 @@ nav{
     font-size: 18px;
 }
 
+.img_sing2{
+    margin: -170px 0px 0px 780px;
+}
+
 .text15{
-    margin-top: -65px;
+    margin-top: 55px;
     margin-left: 771px;
     color: #323e4f;
     font-size: 28px;
@@ -465,8 +541,12 @@ nav{
     font-size: 18px;
 }
 
+.img_ok{
+    margin: -175px 0px 0px 1072px;
+}
+
 .text17{
-    margin-top: -65px;
+    margin-top: 60px;
     margin-left: 1071px;
     color: #323e4f;
     font-size: 28px;
@@ -480,8 +560,12 @@ nav{
     font-size: 18px;
 }
 
+.img_bokal{
+    margin: -180px 0px 0px 1370px;
+}
+
 .text19{
-    margin-top: -65px;
+    margin-top: 60px;
     margin-left: 1379px;
     color: #323e4f;
     font-size: 28px;
@@ -590,6 +674,9 @@ nav{
     text-align: left;
     background-color: #d2d6dc;
 }
+.contacts input:focus{
+    border: 2px solid #e88604;
+}
 
 .text30{
     margin-left: 510px;
@@ -599,6 +686,9 @@ nav{
     padding-right: 495px;
     text-align: left;
     background-color: #d2d6dc;
+}
+.contacts textarea:focus{
+    border: 2px solid #e88604;
 }
 
 .text31{
@@ -611,6 +701,18 @@ nav{
     border: 2px solid #ffffff;
     background: none;
     border-radius: 5px;  
+}
+
+.contacts2 input{
+    transform: 0.2s;
+    transform: scale(1);
+}
+.contacts2 input:hover{
+    background: #e88604;
+    color: white;
+}
+.contacts2 input:active{
+    transform: scale(1.1);
 }
 
 .map{

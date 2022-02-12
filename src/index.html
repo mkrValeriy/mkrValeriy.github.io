@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="description" content="Это моя первая страница...">
     <meta name="author" content="Valeriy">
@@ -10,9 +11,16 @@
     
     <title>Валерий Макаров - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
     
 </head>
 
@@ -22,7 +30,10 @@
 
 <header>
     <nav>
-        <div class="logo">Валерий Макаров</div>
+       <div class="container">
+           <div class="row">
+               <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Валерий Макаров</div></div>
+               <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">        
         <div class="menu">
             <ul>
                 <li><a href="#">ОБО МНЕ</a></li>
@@ -33,15 +44,36 @@
                 <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
         </div>
+        </div>
+        <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+        <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Навигация
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">ОБО МНЕ</a></li>
+                    <li><a class="dropdown-item" href="#">УСЛУГИ</a></li>
+                    <li><a class="dropdown-item" href="#">КЕЙСЫ</a></li>
+                    <li><a class="dropdown-item" href="#">ПРАЙС</a></li>
+                    <li><a class="dropdown-item" href="#">ОТЗЫВЫ</a></li>
+                    <li><a class="dropdown-item" href="#">КОНТАКТЫ</a></li>
+                </ul>
+        </div>
+        </div>
+        </div>
+        </div>
     </nav>
 </header>
 
 
 <section class="I_AM"><div class="title__container">
-    <h1>Привет <br> Я Валерий Макаров</h1>
-    <h4>Фулл стек Веб-разработчик</h4>
-    <input type="button" value="Обо мне">
-    <input type="button" value="Мои работы">
+   <div class="container h-100"><div class="row algin-items-center h-100"><div class="col-lg-6 mt-5 pt-5">
+        <h1>Привет <br> Я Валерий Макаров</h1>
+        <h4><i class="fa fa-css3" aria-hidden="true"></i> Фулл стек Веб-разработчик</h4>
+        <input type="button" value="Обо мне">
+        <input type="button" value="Мои работы">   
+   </div></div></div>
 </div>
 </section>
 
@@ -52,7 +84,7 @@
     
     <p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto error minus cumque quis, quibusdam at voluptatibus laudantium fuga ducimus a, <br> perspiciatis eaque quas sunt nemo ullam quod. Perspiciatis cumque veritatis in voluptatibus natus?</p>
     
-    <input type="submit" value="Скачать Резюме">
+    <input type="button" value="Скачать Резюме">
 </div>
     
 <section class="What_i_do">
@@ -93,7 +125,7 @@
         <p class="text9">http://www.somedomain.com</p>
     </div>
     
-        <input type="submit" value="VISIT LIVE SITE">
+        <input type="button" value="VISIT LIVE SITE">
     
     <div class="projekt_name">
         <h4>Название проекта</h4>
@@ -139,24 +171,40 @@
             <option>Адаптация всех видов</option>
         </select>
        
-        <p class="text11">Сроки 0</p>
-        <p class="text12">Стоимость 0</p>
-        
+        <p class="text11">Сроки</p>
+        <p class="text12">Стоимость</p>
+        <p class="text11_0">0</p>
+        <p class="text12_0">0</p>
     </form>
 </section>
    
 <section class="statistics">
-    <h3>НЕМНОГО СТАТИСТИКИ</h3>
+    <h3>НЕМНОГО СТАТИСТИКИ</h3> 
+    <div class="img_strip">
+        <img src="../src/img/strip.png" alt="">
+    </div>
     
+    <div class="img_1">
+        <img class="smile" src="../src/img/smile.png"alt="">
+    </div>
     <p class="text13">120</p>
     <p class="text14">Счастливых клиентов</p>
     
+    <div class="img_sing2">
+        <img src="../src/img/sign2.png" alt="">
+    </div>
     <p class="text15">4,600</p>
     <p class="text16">Часов работы</p>
     
+    <div class="img_ok">
+        <img src="../src/img/ok.png" alt="">
+    </div>
     <p class="text17">340</p>
     <p class="text18">Проектов завершено</p>
     
+    <div class="img_bokal">
+        <img src="../src/img/bakal.png" alt="">
+    </div>
     <p class="text19">23</p>
     <p class="text20">Наград получено</p>
 </section>
@@ -179,10 +227,12 @@
  
     <form class="text27" action="g">
         <input type="text" class="text28" name="text" value="" placeholder="Ведите ваше Имя">
-        <input type="text" class="text29" name="text" value="" placeholder="Email"> <br>
+        <input id="email" type="email" class="text29" value="" placeholder="Email">
         <textarea class="text30" name="text" cols="50" rows="8" placeholder="Сообщение"></textarea>
     </form>
-        <input class="text31" type="submit" value="Отправить">
+        <div class="contacts2">
+            <input class="text31" type="button" value="Отправить">
+        </div>
 </section>
 
 <section class="map">
@@ -193,6 +243,6 @@
     <p class="Copyright"> Copyright © 2021 Валерий Макаров. Design by Web</p>
 </section>
 
-
+<script src="js/bootstrap.bundle.min.js.map"></script>
 </body>
 </html>
